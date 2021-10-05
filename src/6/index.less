@@ -1,0 +1,121 @@
+/* DO NOT CHANGE THIS ROOT CLASS NAME*/
+.TASK_6 {
+  @pending: #ffee58;
+  @delete: #dc3545;
+  @completed: #39db80;
+  @white: #fff;
+  @black: #000;
+
+  .add-form {
+    margin: auto;
+    width: 40%;
+  }
+
+  .add-form .add-input,
+  .filter-input {
+    padding: 11px 6px 8px 11px;
+    font-size: 16px;
+    border-radius: 9px;
+    border: 1px solid #d3d3d3;
+    opacity: 0.7;
+  }
+
+  .filter-input {
+    width: 30%;
+  }
+
+  .add-input {
+    width: 100%;
+  }
+
+  .form-container {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .form-hide {
+    display: none;
+  }
+
+  .title {
+    font-weight: 600;
+    color: @black;
+    display: inline-block;
+    max-width: 40%;
+  }
+
+  .pending-container,
+  .completed-container {
+    padding: 30px 20px 30px 20px;
+    border-radius: 27px;
+  }
+
+  .pending-container {
+    border: 2px solid @pending;
+  }
+
+  .completed-container {
+    border: 2px solid @completed;
+  }
+
+  .pending-container:hover,
+  .completed-container:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+
+  .delete,
+  .pending,
+  .completed {
+    padding: 14px 12px 11px 14px;
+    font-size: 14px;
+    border-radius: 22px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .delete {
+    background-color: @delete;
+    color: @white;
+  }
+
+  .delete:hover,
+  .pending:hover,
+  .completed:hover {
+    transition: 0.3s;
+  }
+
+  .delete:hover {
+    color: @delete;
+    background-color: @white;
+  }
+
+  .pending:hover {
+    color: @pending;
+    background-color: @black;
+  }
+
+  .completed:hover {
+    color: @completed;
+    background-color: @white;
+  }
+
+  .pending {
+    background-color: @pending;
+    color: @black;
+  }
+
+  .completed {
+    background-color: @completed;
+    color: @white;
+  }
+
+  .buttons-div {
+    float: right;
+    margin-left: 50px;
+  }
+}
